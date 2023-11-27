@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header,footer {
+    background-color: khaki;
+    padding: 25px;
+}
+main {
+    display: flex;
+    flex: 1;
+    height: 500px;
+}
+main > article{
+    background-color: beige;
+    flex: 2;
+    padding: 15px;
+    order: 1;
+}
+main > aside{
+    background-color: pink;
+    flex: 1;
+    padding: 15px;
+    order: 2;
+}
+main > nav{
+    background-color: aqua;
+    flex: 1;
+    padding: 15px;
+    order: 3;
+}

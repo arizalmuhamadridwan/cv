@@ -1,0 +1,41 @@
+body{
+    background-color: pink;
+}
+.header{
+    background-color: aqua;
+    height: 70px;
+    width: 1260px;
+}
+.mid{
+    display: flex;
+    justify-content: space-between;
+    height: 430px;
+}
+.aside{
+    width: 300px;
+    background-color: blue;
+    margin: 10px 10px 10px 0px;
+}
+.article{
+    width: 1110px;
+    background-color: red;
+    margin: 10px 0px 10px 0px;
+}
+.image{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px; 
+}
+.foto{
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    background-color: aqua;
+}
+.footer{
+    background-color: aqua;
+    height: 70px;
+    width: 1260px;
+    display: flex;
+    justify-content: center;
+}
