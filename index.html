@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <script>
+        function image_picker(){
+            const list_image = ["gajah.png", "rusa.jpeg", "ular.jpeg", "kura-kura.png", "rubah.png"];
+            let pilihan = document.getElementById("opsi").value;
+            let select;
+
+            if (pilihan === "gajah") {
+                select = list_image[0];
+            } else if (pilihan === "rusa") {
+                select = list_image[1];
+            } else if (pilihan === "ular") {
+                select = list_image[2];
+            } else if (pilihan === "kura-kura") {
+                select = list_image[3];
+            } else if (pilihan === "rubah") {
+                select = list_image[4];
+            }
+
+            if (select) {
+                document.getElementById("gambar").src = `gambar_hewan/${select}`;
+                setTimeout(function() {
+                    alert(`Ini adalah gambar ${pilihan}`);
+                }, 500);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Image Picker</h1>
+
+    <select name="" id="opsi" onchange="image_picker()">
+        <option value="">Pilih Gambar</option>
+        <option value="gajah"> Gajah </option>
+        <option value="rusa"> Rusa </option>
+        <option value="ular"> Ular </option>
+        <option value="kura-kura"> Kura-Kura </option>
+        <option value="rubah"> Rubah </option>
+    </select>
+
+    <div class="container">
+        <img id="gambar">
+    </div>
+
+</body>
+</html>
