@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <title>1 oy</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgb(93, 122, 93);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .container {
+        display: flex;
+        color: white;
+        width: 100%;
+    }
+    
+    .content {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+
+                    /* isi atas */
+    .top {
+        border: solid; 
+        margin-top: 10px;       
+    }
+    .produk {
+        text-align: center;
+    }
+
+    .how {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .foto1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 5px;
+        height: 130px;
+        width: 230px;
+        margin-bottom: 10px;
+        color: black;
+        border-radius: 15%;
+    }
+
+    .img {
+      margin-right: 20px; /
+    }
+
+    .img img {
+        height: 68px;
+        width: 103px;
+        margin-left: 5px;
+    }
+
+    .ket1 {
+      text-align: center;
+    }
+
+    .foto2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 5px;
+        height: 130px;
+        width: 230px;
+        margin-bottom: 10px;
+        color: black;
+        border-radius: 15%;
+    }
+
+    .img1 {
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+
+    .img1 img {
+        height: 80px;
+        width: 80px;
+        margin-left: 5px;
+    }
+
+    .ket2 {
+        text-align: center;
+    }
+
+    .foto3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 5px;
+        height: 130px;
+        width: 230px;
+        margin-bottom: 10px;
+        color: black;
+        border-radius: 15%;
+    }
+
+    .img2 {
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+
+    .img2 img {
+        height: 68px;
+        width: 103px;
+    }
+
+    .ket3 {
+        text-align: center;
+    }
+
+
+
+                /* isi bawah */
+    .buttom {
+        border: solid;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .nduwur {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        color: #151515;
+        margin-left: 20px;
+    }
+
+    .ngisor {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        color: #151515;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .icon-box {
+        text-align: center;
+        border: 1px solid #ebebeb;
+        padding: 40px 20px;
+        transition: all ease-in-out 0.3s;
+        background: #fff;
+        height: 240px;
+        width: 220px;
+
+     }
+
+
+    .icon-box h4 {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .icon-box h4 a {
+        color: #151515;
+        transition: ease-in-out 0.3s;
+    }
+
+    .icon-box h4 a:hover {
+        color: #ffc451;
+    }
+
+    .icon-box p {
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .icon-box:hover {
+        border-color: #fff;
+        box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+        transform: translateY(-10px);
+    }
+
+                /* menu kanan */
+    .navkanan {
+        width: 20%;
+        margin-right: 0px;
+        border: solid;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navkanan ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navkanan li {
+        display: block;
+    }
+
+    .navkanan a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navkanan a:hover {
+        background-color: #555;
+    }
+
+</style>
+<body>
+
+    <!-- Start Header/Navigation -->
+	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Car Rental navigation bar">
+
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Jiwa Rental<span>.</span></a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsCarRental" aria-controls="navbarsCarRental" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsCarRental">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li><a class="nav-link" href="index.html">Home</a></li>
+
+                        <li class="nav-item active">
+						    <a class="nav-link" href="try2.html">Collection</a>
+                        </li>
+
+						<li><a class="nav-link" href="2.html">About us</a></li>
+						<li><a class="nav-link" href="3.html">Services</a></li>
+						<li><a class="nav-link" href="hal4.html">Booking</a></li>
+					</ul>
+
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="login/index.html"><img src="images/user.svg"></a></li>
+						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+					</ul>
+				</div>
+			</div>
+				
+	</nav>
+	<!-- End Header/Navigation -->
+
+    <div class="container">
+        <div class="content">
+            <div class="top">
+                <div class="produk">
+                    <h2>Produk</h2>
+                    <a>Jiwa Rental adalah salah satu rental ternama yang memiliki beragam macam peminjaman kendaraan dan peminjaman di Jiwa Rental sangatlah baik dan cukup terpercaya oleh kalangan masyarakat yang telah mempercayai kami.</a>
+                </div>
+                <br>
+                <div class="how">
+                    <div>
+                        <h4>Kendaraan Baru</h4>
+                        <div class="foto1">
+                            <div class="img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3qxTsFrctCZjepAphjLHTzagCeyPdmnBAvw&usqp=CAU" alt="foto mobil baru">
+                            </div>
+                            <div class="ket1">
+                                <a>Pembaruan mobil setiap 4 tahun sekali</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Cara Booking</h4>
+                        <div class="foto2">
+                            <div class="img1">
+                                <img src="https://i.pinimg.com/550x/93/b2/65/93b265c795140247db600ac92e58746a.jpg" alt="logo wa">
+                            </div>
+                            <div class="ket2">
+                                <a>Order cepat by form, WhatsApp, dan Dm Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Pembayaran yang Nyaman</h4>
+                        <div class="foto3">
+                            <div class="img2">
+                                <img src="https://amateurjersey.com/sites/default/files/icon/bank-transfer.png" alt="metode pembayaran">
+                            </div>
+                            <div class="ket3">
+                                <a>Menyediakan seluruh metode pembayaran</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttom">
+                <h2>Koleksi Mobil Kami</h2>
+                <div class="nduwur">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <img src="https://astradigitaldigiroomuat.blob.core.windows.net/storage-uat-001/jenis-mobil-avanza-dan-harganya.jpg" alt="Koleksi mobil" style="height: 100px; width: 200px;">
+                        <h4>Avanza</h4>
+                        <p>5 Hari 5 Malam  cuma Rp. 4.500.000</p>
+                    </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                        <img src="https://rentalmobilsolo.net/wp-content/uploads/2014/12/innova-jpg.jpg" alt="koleksi mobil" style="height: 100px; width: 200px;">
+                        <h4>Innova</h4>
+                        <p>6 Hari 6 Malam cuma Rp. 4.500.000</p>
+                    </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                        <img src="https://cdns.klimg.com/merdeka.com/i/w/news/2023/06/23/1563156/540x270/berita-foto-all-new-toyota-alphard-mobil-van-favorit-pejabat-dan-politisi-indonesia-rev-1.jpg" alt="Koleksi Mobil" style="height: 100px; width: 200px;">
+                        <h4>Alphard</h4>
+                        <p>2 Hari 1 Malam cuma Rp. 4.150.000</p>
+                    </div>
+                    </div>
+            </div>
+                
+            <div class="ngisor">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <img src="https://dealermitsubishikaltim.com/wp-content/uploads/2018/06/Screenshot_2023-07-31-14-32-52-91_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="Koleksi Mobil" style="height: 100px; width: 200px;">
+                        <h4>Pajero</h4>
+                        <p>7 Hari 6 Malam Rp. 4.000.000</p>
+                    </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                        <img src="https://imgcdn.oto.com/large/gallery/color/38/1545/toyota-calya-color-844338.jpg" alt="Kolekasi Mobil" style="height: 100px; width: 200px;">
+                        <h4>Toyota Calya</h4>
+                        <p>3 Hari 3 Malam cuma Rp. 2.750.000</p>
+                    </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                        <img src="https://cdn-2.tstatic.net/wartakota/foto/bank/images/new-yaris-trd-sportivo-1-toyota-yaris-facelift.jpg" alt="Koleksi Mobil" style="height: 100px; width: 200px;">
+                        <h4>Yaris</h4>
+                        <p>5 Hari 5 Malam cuma Rp. 4.000.000</p>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div class="navkanan">
+            <h3>Kategori Produk</h3>
+            <ul>
+                <li><a href="#">Bus Wisata</a></li>
+                <li><a href="#">Minibus Keluarga</a></li>
+                <li><a href="#">Sedan Eksekutif</a></li>
+                <li><a href="#">Mobil Ekspedisi</a></li>
+              </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
